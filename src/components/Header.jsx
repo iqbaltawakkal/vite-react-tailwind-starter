@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
 const Header = ({ title }) => {
   return (
@@ -10,6 +11,10 @@ const Header = ({ title }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  title: PropTypes.string,
 };
 
 export default Header;
